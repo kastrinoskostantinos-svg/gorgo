@@ -1,0 +1,11 @@
+Model Information:
+* title:	Poseidon
+* source:	https://sketchfab.com/3d-models/poseidon-864333c4c8a44224b5c2e46f66d94a8b
+* author:	lahisoon (https://sketchfab.com/lahisoon)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Poseidon" (https://sketchfab.com/3d-models/poseidon-864333c4c8a44224b5c2e46f66d94a8b) by lahisoon (https://sketchfab.com/lahisoon) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

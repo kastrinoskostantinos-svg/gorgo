@@ -82,7 +82,7 @@
       audio.setBuffer(audioBuffer);
       audio.setRefDistance(100);
       audio.setLoop(true);
-      audio.setVolume(0.5); // volume 0-1
+      audio.setVolume(10); // volume 0-1
 
       anchor.group.add(audio);
 
@@ -98,7 +98,7 @@
 
       mindarThree = new window.MINDAR.IMAGE.MindARThree({
         container: arUI,
-        imageTargetSrc: './assets/targets/target.mind' // Βεβαιώσου ότι περιέχει 3 στόχους
+        imageTargetSrc: './assets/targets/targets(2).mind'  // Βεβαιώσου ότι περιέχει 3 στόχους
       });
 
       const { renderer, scene, camera } = mindarThree;
@@ -111,27 +111,27 @@
 
       // Create 3 AR experiences
       await createExperience(
-        './assets/models/model1/scene.gltf', 
+        './assets/models/lion/scene.gltf', 
         0, 
         listener, 
-        './assets/sounds/sound1.mp3', 
-        new THREE.Vector3(0.2, 0.2, 0.2) 
+        './assets/sounds/lionvoice.mp3', 
+        new THREE.Vector3(0.04,0.04,0.04) 
       );
 
       await createExperience(
-        './assets/models/listener/scene.gltf', 
+        './assets/models/poseidon/scene.gltf', 
         1, 
         listener, 
-        './assets/sounds/sound2.mp3', 
-        new THREE.Vector3(0.2, 0.2, 0.2) 
+        './assets/sounds/posvoice.mp3', 
+        new THREE.Vector3(0.8, 0.8, 0.8) 
       );
 
       await createExperience(
-        './assets/models/nemesis/scene.gltf', 
+        './assets/models/medusa/scene.gltf', 
         2, 
         listener, 
-        './assets/sounds/sound3.mp3', 
-        new THREE.Vector3(1.3, 1.3, 1.3)
+        './assets/sounds/medusavoice.mp3', 
+        new THREE.Vector3(0.7,0.7, 0.7)
       );
 
       await mindarThree.start();
@@ -145,6 +145,8 @@
 
     startAREngineButton.addEventListener("click", start);
   </script>
+  
+
 
 </body>
 </html>

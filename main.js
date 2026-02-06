@@ -13,11 +13,11 @@ let currentStage = "intro";
 // ===== Stage data =====
 const STAGES = {
   intro: {
-    bg: "assets/intro.png",
-    title: "AR Experience",
-    text: `Sth about the setting.`,
+    bg: "assets/gorgo.jpg",
+    title: "YOUR GORGO EXPERIENCE",
+    text: `Gorgo Is The Protector`,
     buttons: [
-      { label: "Start", action: () => {
+      { label: "Your Search Begins", action: () => {
           enableSound();
           playAmbient();
           speak(STAGES.intro.text);
@@ -31,21 +31,21 @@ const STAGES = {
   },
 
   role: {
-    bg: "assets/role-selection.png",
-    title: "Your Quest",
-    text: `Explore and reveal what lies hidden.`,
+    bg: "assets/gorgolum1.jpg",
+    title: "YOUR GORGO EXPERIENCE",
+    text: `DISCOVER HER MYTH.`,
     buttons: [
-      { label: "Lore Keeper", action: () => goTo("lore") },
+      { label: "The Divine Bond", action: () => goTo("lore") },
       { label: "Instructions", action: () => goTo("instructions") }
     ]
   },
 
   lore: {
-    bg: "assets/lore-keeper.png",
-    title: "Lore Keeper",
-    text: `Use AR to uncover traces. Each clue will reveal a part of the story.`,
+    bg: "assets/medusa3.jpg",
+    title: "The Divine Bond",
+    text: `Use AR to reveal the protectors of the temple.`,
     buttons: [
-      { label: "Explore via AR", action: () => {
+      { label: "START AR EXPERIENCE", action: () => {
           stopAmbient();
           window.open(`ar.html?from=${currentStage}`, "_blank");
       }},
@@ -55,13 +55,13 @@ const STAGES = {
   },
 
   instructions: {
-    bg: "assets/instructions.png",
-    title: "How to Play — Overview",
+    bg: "assets/templegorgo1.jpg",
+    title: "Discover the secrets of Artemis temple",
     text: `
-      • You play as the <b>Lore Keeper</b>.<br>
-      • Use your device camera to scan AR markers hidden in the environment.<br>
-      • Each marker reveals a voice message or a symbol.<br>
-      • Collect all the pieces, then finish your task.<br>
+      • You play as the <b>Pegasus</b>.<br>
+      • Use your device camera to find 2 hidden markers on the pediment.<br>
+      • Each marker reveals a voice information and a symbol.<br>
+      • Scan 2 pieces of Artemis Temple to understand why Gorgo is the true protector of the Temple .<br>
     `,
     buttons: [
       { label: "Back", action: () => goTo("role") }
@@ -70,7 +70,7 @@ const STAGES = {
 
   // ——— Minimal edits so the end "has meaning" ———
   end: {
-  bg: "assets/olympus.jpg",
+  bg: "assets/back.jpg",
   title: "Ολοκλήρωση",
   text: `Ολοκλήρωσες το ταξίδι σου.<br><br>Θέλεις να ξαναρχίσεις;`,
   buttons: [
