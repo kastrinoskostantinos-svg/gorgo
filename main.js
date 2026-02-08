@@ -15,7 +15,7 @@ const STAGES = {
   intro: {
     bg: "assets/gorgo.jpg",
     title: "YOUR GORGO EXPERIENCE",
-    text: `Gorgo Is The Protector`,
+    text: `WELCOME PEGASUS`,
     buttons: [
       { label: "Your Search Begins", action: () => {
           enableSound();
